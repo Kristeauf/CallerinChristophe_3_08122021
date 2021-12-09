@@ -1,0 +1,59 @@
+h2{
+    font-family: 'Shrikhand', cursive;
+    font-size: 28px;
+    font-weight: lighter;
+    padding-top: 30px;
+}
+div.logo {
+    text-align: center;
+   box-shadow: inset rgb(200, 200, 209)0px -3px 3px 0px;
+    padding-top: 25px;
+    background-color: white;
+   
+
+  
+}
+    
+  .logo img{
+      width:37%;
+      padding-bottom: 10px;
+      
+  }  
+
+div.localise{
+    background-color: #e8eaee;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+}
+i.fa-map-marker-alt{
+    position: relative;
+    right:15px;
+}
+   
+    i.fa-map-marker-alt::before{
+        font-size: 15px;
+    }
+.town{
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold;
+}  
+ a.logo_retour_lien{
+     text-decoration: none;
+     color: black;
+ }
+
+i.fas.fa-solid.fa-arrow-left::before{
+   position: relative;
+  width: 50px;
+   right: 80px;
+   bottom:15px;
+
+    font-size: 20px;
+}
