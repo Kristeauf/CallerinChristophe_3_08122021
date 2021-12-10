@@ -1,0 +1,17 @@
+.nav__recherche{
+    background-color: #e8eaee;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+i.fa-map-marker-alt::before{
+    font-size: 15px;
+}
+.nav__town{
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold;
+}
