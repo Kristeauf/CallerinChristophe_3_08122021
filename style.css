@@ -6,7 +6,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #f5f3f3;
   box-sizing: border-box;
-  max-width: 1500px;
+  
 
 }
 
@@ -90,36 +90,33 @@ div.carte_menu__container {
  background-color: #f5f3f3;
  margin-bottom: 10px;
  padding-bottom: 15px;
- animation-name: apparition;
- animation-duration: 2s;
- animation-timing-function: ease-out;
- animation-fill-mode: forwards;
- transform: translateY(0px);
+ -webkit-box-shadow: #eee9e9 0px -1px 8px 4px;
+ box-shadow: #eee9e9 0px -1px 8px 4px;
 
- -webkit-transform: translateY(0px);
- -moz-transform: translateY(0px);
- -ms-transform: translateY(0px);
- -o-transform: translateY(0px);
  /* animation apparition du menu*/
 }
 @keyframes apparition {
-  from{ transform: translateY(100px); 
-    -webkit-transform: translateY(100px); 
-    -moz-transform: translateY(100px); 
-    -ms-transform: translateY(100px); 
-    -o-transform: translateY(100px);
+  from{
     opacity: 0;
+    transform: translatey(40px);
+    -webkit-transform: translatey(40px);
+    -moz-transform: translatey(40px);
+    -ms-transform: translatey(40px);
+    -o-transform: translatey(40px);
 }
-  to{ transform:translateY(0) ; 
-    -webkit-transform:translateY(0) ;
-     -moz-transform:translateY(0) ; 
-     -ms-transform:translateY(0) ; 
-     -o-transform:translateY(0) ; 
+ to{
     opacity: 1;
-    }
+    transform: translatey(0px);
+    -webkit-transform: translatey(0px);
+    -moz-transform: translatey(0px);
+    -ms-transform: translatey(0px);
+    -o-transform: translatey(0px);
+}
+}
+ 
 
   
-}
+
 
 .placement_coeur h2 {
   padding-top: 0;
@@ -207,28 +204,44 @@ i.fas.fa-handshake {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 15px;
-  -webkit-box-shadow: #eee9e9 0px -1px 8px 4px;
-          box-shadow: #eee9e9 0px -1px 8px 4px;
+ 
+          animation-name: apparition;
+          animation-duration: 3s;
+          animation-timing-function: ease-in-out;
+          animation-fill-mode: forwards;
+          transform: translateY(0px);
+         
+          -webkit-transform: translateY(0px);
+          -moz-transform: translateY(0px);
+          -ms-transform: translateY(0px);
+          -o-transform: translateY(0px);        
 }
 
 .detail{
-  width: 50%;
+  width: 75%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
   padding-top: 5px;
- 
   white-space: nowrap;
   overflow: hidden;
- text-overflow: ellipsis;
+}
+  .infos{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+ 
+ 
+ 
   
  
-}
+
 .carte_menu--detail{
   width: 95%;
   display: flex;
-  justify-content: space-between;
+ 
   align-items: flex-end;
   padding: 0px;
   
@@ -242,22 +255,23 @@ i.fas.fa-handshake {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 1;
-  animation-name: check;
-  animation-duration: 2s;
-  animation-delay: 0.3s;
-  animation-fill-mode: forwards;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px; 
+  opacity: 0;
+  
+  
 }
 .detail h4{
   margin-bottom: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
 }
 .prix{
-width: 20%;
+width: 10%;
 font-weight: bolder; text-overflow:ellipsis;
 text-align: end;
-margin-right: 20px;
+padding-right: 20px;
+
 padding-bottom: 10px;
 }
 
@@ -273,7 +287,7 @@ padding-bottom: 10px;
    }
    to{
      opacity:1;
-     width:15%;
+     width:20%;
    }
  }
 i.fas.fa-check{
@@ -288,24 +302,48 @@ i.fas.fa-check{
  -ms-border-radius: 50%;
  -o-border-radius: 50%;
  padding: 5px;
-animation-name: rotateico;
- animation-duration: 1.8s;
+ transform: rotate(0);
+ opacity: 0;
+ -webkit-transform: rotate(0);
+ -moz-transform: rotate(0);
+ -ms-transform: rotate(0);
+ -o-transform: rotate(0);
+}
+.carte_menu--detail:hover .check{
+  animation-name: check;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; 
+}
+.carte_menu--detail:hover i.fas.fa-check {
+  animation-name: rotateico;
+ animation-duration: 1s;
  animation-timing-function: linear;
  animation-fill-mode:forwards;
- animation-direction: reverse;
 
  animation-iteration-count:1;
+ 
 
 }
  @keyframes rotateico {
-   to{
-     transform: rotate(360deg);
-     -webkit-transform: rotate(360deg);
-     -moz-transform: rotate(360deg);
-     -ms-transform: rotate(360deg);
-     -o-transform: rotate(360deg);
+   0%{
+     opacity:1;
+    
+     transform: rotate(1turn);
+     -webkit-transform: rotate(1turn);
+     -moz-transform: rotate(1turn);
+     -ms-transform: rotate(1turn);
+     -o-transform: rotate(1turn);
+   }
+  
+   
+   100%{
+     opacity: 1;
+   }
 }   
-    }
+    
       h4
 {
   margin: 3px;
@@ -422,23 +460,26 @@ div.container_fonctionnenent__card :nth-child(2) {
 }
 
 div.container_fonctionnenent__card :nth-child(1) {
-  background-color: #9356dc;
-  width: 5px;
-  height: 5px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
+          background-color: #9356dc;
+          width: 5px;
+          height: 5px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
           align-items: center;
-  color: white;
-  padding: 10px;
-  border-radius: 50%;
-  -webkit-transform: translateX(-30px);
-          transform: translateX(-30px);
+          color: white;
+          padding: 10px;
+          border-radius: 50%;
+          -webkit-transform: translateX(-32px);
+          transform: translateX(-32px);
+          -moz-transform: translateX(-32px);
+          -ms-transform: translateX(-32px);
+          -o-transform: translateX(-32px);
 }
 
 div.container_fonctionnenent__card {
@@ -512,6 +553,7 @@ i.fas.fa-mobile-alt {
 }
 
 .info_resto {
+  padding: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
