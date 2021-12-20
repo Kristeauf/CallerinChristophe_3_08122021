@@ -10,6 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #f5f3f3;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 /*loader*/
 .logo-loader img{
@@ -618,8 +619,14 @@ i.fas.fa-check{
  -webkit-animation-iteration-count:1;
 
          animation-iteration-count:1;
- 
-
+}
+.carte_menu--detail:hover{
+         box-shadow: 3px 3px 10px 6px #c4bebf;
+         transition: 0.4s;
+         -webkit-transition: 0.4s;
+         -moz-transition: 0.4s;
+         -ms-transition: 0.4s;
+         -o-transition: 0.4s;
 }
  @-webkit-keyframes rotateico {
    0%{
@@ -688,8 +695,12 @@ h3 {
   background: linear-gradient(#ff79da, #a76af1);
   color: whitesmoke;
   box-shadow: 3px 3px 5px 2px #c4bebf;
-}
 
+}
+.command a {
+  text-decoration: none;
+  color: white;
+}
 .command:hover {
         transition: all 2s ;
         transition-delay: 3s;
@@ -806,7 +817,7 @@ div.container_fonctionnenent__card {
 }
 
 i.fas.fa-store {
-  color: #9356dc;
+  color:grey;
 }
 
 i.fas.fa-list-ul {
@@ -816,6 +827,20 @@ i.fas.fa-list-ul {
 i.fas.fa-mobile-alt {
   color: grey;
 }
+.container_fonctionnenent__card:hover i::before
+   {
+      color: #9356dc;
+
+    }
+  .container_fonctionnenent__card:hover{
+    box-shadow: 3px 3px 10px 6px #c4bebf;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+   
 
 .accueil_resto {
   width: 90%;
@@ -835,6 +860,11 @@ i.fas.fa-mobile-alt {
 .accueil_resto a {
   text-decoration: none;
   color: black;
+}
+.accueil_resto a:hover{
+  box-shadow: 3px 3px 10px 6px #c4bebf;
+  border-radius: 25px;
+  
 }
 
 .info_resto {
@@ -972,7 +1002,7 @@ i.fas.fa-mobile-alt {
      justify-content: space-between;
     
     }
-   
+  
     #restaurants{
       width: 90%;
       margin-left: auto;
@@ -1003,4 +1033,3 @@ i.fas.fa-mobile-alt {
     
    
   
-}
