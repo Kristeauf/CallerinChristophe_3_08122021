@@ -1,0 +1,38 @@
+div.localise {
+ 
+    background-color: #e8eaee;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+   
+  }
+  
+  
+  
+  
+  i.fa-map-marker-alt::before {
+    font-size: 15px;
+    
+  }
+  input{
+   width: 135px;
+    margin-left: 10px;
+    border:none;
+     background-color:#e8eaee ;
+     font-size: 18px;
+  }
+  input::placeholder{
+    width: auto;
+    color: black;
+    font-weight: bolder;
+    font-size: 18px;
+    
+  }
+   
+  
+  
+ 

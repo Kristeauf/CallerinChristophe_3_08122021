@@ -1,0 +1,91 @@
+/*mediaqueries desktop tablets*/
+@media screen and (min-width: 769px) {
+    .logo img {
+      width: 300px;
+    }
+  
+    div.footlogo img {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 30px;
+      margin-bottom: 30px;
+    }
+  
+    footer ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+   
+    header, nav {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .titre__acceuil2 {
+      width: 100%;
+    }
+  
+    .container_fonctionnenent__card {
+      width: 50%;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+  
+    #restaurants {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  
+    .accueil_resto {
+      margin: 0;
+      margin-bottom: 40px;
+      width: 48%;
+      height: auto;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+    }
+  
+    .carte_menu--detail {
+      width: 50%;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+  
+    article {
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  
