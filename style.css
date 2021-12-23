@@ -238,6 +238,7 @@ h2 {
   -webkit-box-shadow: inset #c8c8d1 0px -3px 3px 0px;
           box-shadow: inset #c8c8d1 0px -3px 3px 0px;
   padding-top: 25px;
+  padding-bottom: 15px;
   background-color: white;
   position: relative;
 }
@@ -278,28 +279,28 @@ input::-webkit-input-placeholder {
   width: auto;
   color: black;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 input:-ms-input-placeholder {
   width: auto;
   color: black;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 input::-ms-input-placeholder {
   width: auto;
   color: black;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 input::placeholder {
   width: auto;
   color: black;
   font-weight: bolder;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 /*page accueil*/
@@ -858,8 +859,6 @@ i.fas.fa-check {
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
 }
 
 .carte_menu--detail:hover i.fas.fa-check {
