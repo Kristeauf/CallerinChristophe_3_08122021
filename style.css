@@ -610,6 +610,11 @@ div.carte_menu__container {
   -moz-transform: translateY(0px);
   -ms-transform: translateY(0px);
   -o-transform: translateY(0px);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
 .carte_menu--detail:nth-of-type(2) {
@@ -690,7 +695,7 @@ div.carte_menu__container {
   -o-transition: 3s;
 }
 
-.detailh4 {
+.detail h4 {
   margin-bottom: 5px;
   overflow: hidden;
   white-space: nowrap;
@@ -767,7 +772,7 @@ h3 {
   -webkit-animation-name: coeurempli;
   animation-name: coeurempli;
   -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+  animation-duration: 0.5s;
   -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
   animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
@@ -781,14 +786,14 @@ h3 {
 
 @-webkit-keyframes coeurempli {
   0% {
-    color: rgba(187, 86, 220, 0.2);
+    color: rgba(187, 86, 220, 0.3);
     font-weight: lighter;
   }
   50% {
     color: rgba(187, 86, 220, 0.5);
   }
   99% {
-    color: rgba(187, 86, 220, 0.7);
+    color: rgba(187, 86, 220, 0.6);
   }
   100% {
     color: #bb56dc;
@@ -798,14 +803,14 @@ h3 {
 
 @keyframes coeurempli {
   0% {
-    color: rgba(187, 86, 220, 0.2);
+    color: rgba(187, 86, 220, 0.3);
     font-weight: lighter;
   }
   50% {
     color: rgba(187, 86, 220, 0.5);
   }
   99% {
-    color: rgba(187, 86, 220, 0.7);
+    color: rgba(187, 86, 220, 0.8);
   }
   100% {
     color: #bb56dc;
@@ -908,6 +913,11 @@ i.fas.fa-check {
   animation-fill-mode: forwards;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
 
 @-webkit-keyframes rotateico {

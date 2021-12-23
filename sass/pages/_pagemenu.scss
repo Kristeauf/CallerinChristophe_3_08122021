@@ -88,12 +88,12 @@ a.logo_retour_lien {
     -moz-transform: translateY(0px);
     -ms-transform: translateY(0px);
     -o-transform: translateY(0px);
-    
-    
-     
-     
-
-    }
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
   
     .carte_menu--detail:nth-of-type(2){
       animation-delay: 5s;}
@@ -116,6 +116,8 @@ a.logo_retour_lien {
     white-space: nowrap;
     overflow: hidden;
   }
+   
+  
   
   .infos {
     font-size: 15px;
@@ -169,7 +171,7 @@ a.logo_retour_lien {
   -ms-transition: 3s;
   -o-transition: 3s;
 }
-       .detailh4
+.detail h4
  
 {
    
