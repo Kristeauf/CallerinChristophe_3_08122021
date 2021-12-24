@@ -94,6 +94,15 @@ a.logo_retour_lien {
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 }
+.carte_menu--detail:nth-of-type(2n-2){
+ 
+  animation-delay: 1s;
+}
+
+.carte_menu--detail:nth-of-type(5n-5){
+ 
+  animation-delay: 2s;
+}
   
     .carte_menu--detail:nth-of-type(2){
       animation-delay: 5s;}
@@ -137,40 +146,10 @@ a.logo_retour_lien {
     padding: 0px;
     box-shadow: 1px 1px 8px 1px rgb(235, 232, 232);
   }
-  .carte_menu--detail:nth-of-type(2n-2){
  
-    animation-delay: 1s;
-  }
   
-  .carte_menu--detail:nth-of-type(5n-5){
-   
-    animation-delay: 2s;
-  }
-  
-  .check {
-  width: 0%;
-  height: 65px;
-  -ms-grid-row-align: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  background-color:$blu;
-  margin: 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  opacity: 1;
-  transition: 3s;
-  -webkit-transition: 3s;
-  -moz-transition: 3s;
-  -ms-transition: 3s;
-  -o-transition: 3s;
-}
+ 
+
 .detail h4
  
 {
@@ -205,7 +184,7 @@ a.logo_retour_lien {
   
   .trait {
     width: 40px;
-    border-bottom: #99e2d0 4px solid;
+    border-bottom: $blu 4px solid;
     margin-bottom: 20px;
     margin-left: 20px;
     margin-top: 8px;
