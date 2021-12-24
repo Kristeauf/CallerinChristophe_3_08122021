@@ -348,7 +348,7 @@ h2.titre__accueil {
 }
 
 .container_fonctionnenent__card {
-  width: 80%;
+  width: 78%;
   margin-left: auto;
   margin-right: auto;
   padding: 25px;
@@ -794,7 +794,7 @@ h3 {
 }
 
 .check {
-  width: 0%;
+  width: 10%;
   height: 65px;
   -ms-grid-row-align: center;
   -ms-flex-item-align: center;
@@ -811,79 +811,12 @@ h3 {
   -ms-flex-pack: center;
   justify-content: center;
   opacity: 1;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-}
-
-@-webkit-keyframes check {
-  0% {
-    opacity: 1;
-    width: 10%;
-  }
-  50% {
-    opacity: 1;
-    width: 20%;
-    transition: 2s;
-    -webkit-transition: 2s;
-    -moz-transition: 2s;
-    -ms-transition: 2s;
-    -o-transition: 2s;
-  }
-  90% {
-    opacity: 1;
-    width: 20%;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-  }
-  100% {
-    opacity: 1;
-    width: 20%;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-  }
-}
-
-@keyframes check {
-  0% {
-    opacity: 1;
-    width: 10%;
-  }
-  50% {
-    opacity: 1;
-    width: 20%;
-    transition: 2s;
-    -webkit-transition: 2s;
-    -moz-transition: 2s;
-    -ms-transition: 2s;
-    -o-transition: 2s;
-  }
-  90% {
-    opacity: 1;
-    width: 20%;
-    transition: all 0.3s;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-  }
-  100% {
-    opacity: 1;
-    width: 20%;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-  }
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  opacity: 0;
 }
 
 i.fas.fa-check {
@@ -911,22 +844,10 @@ i.fas.fa-check {
 }
 
 .carte_menu--detail:hover .check {
-  cursor: pointer;
-  -webkit-animation-name: check;
-  animation-name: check;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
+  width: 20%;
+  opacity: 1;
 }
 
 .carte_menu--detail:hover i.fas.fa-check {
@@ -1094,10 +1015,10 @@ i.fas.fa-handshake {
     width: 100%;
   }
   .container_fonctionnenent__card {
-    width: 50%;
+    width: 40%;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
   #restaurants {
     width: 90%;
@@ -1115,6 +1036,9 @@ i.fas.fa-handshake {
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+  }
+  #big {
+    width: 40%;
   }
   .accueil_resto {
     margin: 0;

@@ -41,11 +41,12 @@
     }
   
     .container_fonctionnenent__card {
-      width: 50%;
+      width: 40%;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-      justify-content: space-between;
+      justify-content: flex-start;
     }
+    
   
     #restaurants {
       width: 90%;
@@ -63,6 +64,9 @@
       justify-content: space-between;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+    }
+    #big{
+      width: 40%;
     }
   
     .accueil_resto {
