@@ -716,7 +716,7 @@ h3 {
   padding: 15px 20px;
   border-radius: 25px;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background: linear-gradient(#ff79da, #9356dc);
+  background:linear-gradient(#ff79da, #9356dc);
   color: whitesmoke;
   -webkit-box-shadow: 3px 3px 5px 2px #c4bebf;
   box-shadow: 3px 3px 5px 2px #c4bebf;
