@@ -720,6 +720,11 @@ h3 {
   color: whitesmoke;
   -webkit-box-shadow: 3px 3px 5px 2px #c4bebf;
   box-shadow: 3px 3px 5px 2px #c4bebf;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
 }
 
 .command a {
@@ -731,9 +736,8 @@ h3 {
   transition: all 2s;
   -webkit-transition-delay: 3s;
   transition-delay: 3s;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff87dd), to(#b683f5));
-  background: linear-gradient(#ff87dd, #b683f5);
-  background: linear-gradient #fa82d8, #9b66db;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff87dd), to(#aa69f8));
+  background: linear-gradient(#ff87dd, #aa69f8);
   -webkit-box-shadow: 3px 3px 10px 6px #c4bebf;
   box-shadow: 3px 3px 10px 6px #c4bebf;
   -webkit-transition: all 2s;
