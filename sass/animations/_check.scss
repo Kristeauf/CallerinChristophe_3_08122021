@@ -92,12 +92,12 @@
   
   @-webkit-keyframes rotateico {
     0% {
-color: $blu;
- transform: rotate(1turn);
- -webkit-transform: rotate(1turn);
- -moz-transform: rotate(1turn);
- -ms-transform: rotate(1turn);
- -o-transform: rotate(1turn);
+ color: $blu;
+ transform: rotate-(1turn);
+ -webkit-transform: rotate-(1turn);
+ -moz-transform: rotate-(1turn);
+ -ms-transform: rotate-(1turn);
+ -o-transform: rotate-(1turn);
 }
   
     100% {
@@ -109,11 +109,11 @@ color: $blu;
   @keyframes rotateico {
     0% {
       transform: rotate(1turn);
- -webkit-transform: rotate(1turn);
- -moz-transform: rotate(1turn);
- -ms-transform: rotate(1turn);
- -o-transform: rotate(1turn);
-    }
+      -webkit-transform: rotate(1turn);
+      -moz-transform: rotate(1turn);
+      -ms-transform: rotate(1turn);
+      -o-transform: rotate(1turn);
+}
   
     100% {
       opacity: 1;
